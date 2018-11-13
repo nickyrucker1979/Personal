@@ -2,8 +2,10 @@ import requests
 import pandas as pd
 import json
 
-url_todos = 'https://www.mtbproject.com/data/get-to-dos?email=nickyrucker@hotmail.com&key=7069372-368d1bd556cf228265997eeb04ab2de0'
-url_route_info = 'https://www.mtbproject.com/data/get-trails-by-id?key=7069372-368d1bd556cf228265997eeb04ab2de0&ids='
+key = ''
+
+url_todos = 'https://www.mtbproject.com/data/get-to-dos?email=nickyrucker@hotmail.com&key='+key
+url_route_info = 'https://www.mtbproject.com/data/get-trails-by-id?key='+key+'&ids='
 
 def get_dataframe(passed_url, dataframe_element):
     get_active_url = requests.request("GET", passed_url)
