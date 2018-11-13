@@ -5,8 +5,9 @@ import pandas as pd
 import json
 
 key = ''
+email = ''
 
-url_todos = 'https://www.mtbproject.com/data/get-to-dos?email=nickyrucker@hotmail.com&key='+key
+url_todos = 'https://www.mtbproject.com/data/get-to-dos?email='+email+'&key='+key
 url_route_info = 'https://www.mtbproject.com/data/get-trails-by-id?key='+key+'&ids='
 
 def get_dataframe(passed_url, dataframe_element):
