@@ -1,0 +1,17 @@
+Examples of SSH and SFTP protocols 
+
+Connect:
+  ssh username@test.website.edu
+  sftp username@test.website.edu
+
+List files with last modified date in directory:
+  ls -l 
+
+Copy file to desktop:
+  get "filename.xlsx" "users/nickyrucker/desktop/file.xlsx"
+  
+Put file from desktop on remote server:
+  put "/Users/nickyrucker/desktop/Temp/file.xlsx" "/remotefolder/file.xlsx"
+  
+Other examples:
+  https://www.cs.fsu.edu/~myers/howto/commandLineSSH.html
